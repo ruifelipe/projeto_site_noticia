@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --ff-primary: " Nunito", Helvetica, Arial, sans-serif;
+
+    --clr-white: #F5F5F5;
+}
+
+body {
+    background-color: var(--clr-white);
+    font-family: var(--ff-primary);
+}
+
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    line-height: 21.82px;
+    padding: 0 10px;
+}
+
+li {
+    list-style: none;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+/*Menu*/
+
+.menu-bg {
+    background-color: var(--clr-white);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+   
+}
+
+.menu__logo {
+    margin: 10px;
+}
+
+#logo__img {
+    height: 100px;
+    width: 200px;
+}
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-list__link {
+    padding: 20px 10px;
+}
+
+#menu__title{
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid --clr-white;
+}
+
+/*Header*/
+
+.frase {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.frase__dia {
+    font-size: 1.5rem;
+    color: blue;
+}
+
+/*Noticia*/
+
+.noticia {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.noticia-c {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.texto__title{
+    text-align: center;
+}
+
+.noticia-c__texto {
+    flex: 6 1 160px;
+    text-align: justify;
+    border-left: 1px solid black;
+}
+
+.noticia-c__img {
+    flex: 1 1 350px;
+}
+
+/*Colunista*/
+
+.colunista__img {
+    width: 300px;
+    height: 300px;
+}
+
+.colunista__descricao {
+    text-align: justify;
+}
+
+.colunistas {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.colunista-c{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: center
+}
+
+.colunista {
+    width: 280px;
+    margin: 0 20px;
+}
+
+.colunista__nome{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
