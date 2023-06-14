@@ -18,12 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 2000); // Intervalo de 2 segundos (altere conforme necessário)
 });
 
-// // Adiciona a classe 'menu-open' ao body quando o menu hamburguer é clicado
-// document.addEventListener('DOMContentLoaded', function () {
-//     // Adicione um event listener para o clique no botão de hambúrguer
-//     document.querySelector('.hamburger').addEventListener('click', function () {
-//         // Alterna a classe 'menu-hidden' na lista de menu ao clicar no botão de hambúrguer
-//         document.querySelector('.nav-list').classList.toggle('menu-hidden');
-//     });
+// Adiciona a classe 'menu-open' ao body quando o menu hamburguer é clicado
+document.addEventListener('DOMContentLoaded', function () {
+    // Adicione um event listener para o clique no botão de hambúrguer
+    document.querySelector('.hamburger').addEventListener('click', function () {
+        // Alterna a classe 'menu-hidden' na lista de menu ao clicar no botão de hambúrguer
+        document.querySelector('.nav').classList.toggle('menu-hidden');
+    });
 
-// });  
+});  
