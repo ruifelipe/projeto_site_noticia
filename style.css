@@ -51,7 +51,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1000px;
+    max-width: 1150px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -67,7 +67,17 @@ img {
 
 .nav__list {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1050px;
+    margin-top: 20px;  
+}
+
+.nav__list :hover {
+    transition: .4s ease;
+    background-color: #9DB228;
+    transform: scale(1.2);
+    border-radius: 2px;
+    color: white;
 }
 
 .nav-list__link {
@@ -108,12 +118,31 @@ img {
 /* Estilos para telas menores */
 @media screen and (max-width: 1100px) {
     .nav {
-        display: none;
-        /* Oculta a lista de menu em telas menores */
+         display: none;
+         /* Oculta a lista de menu em telas menores */
+    }
+
+    .nav__list {
+        display: block;
+    }
+
+    .nav-list__link {
+        display: block;
+        margin-top: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: .5s ease;
+    }
+
+    .nav-list__link:hover{
+        color: #18d327;
+        background-color: #243625;
+        transform: scale(1.2);
+        border-radius: 10px;
     }
 
     .menu-hidden {
-        display: block;
+        display: flex;  
         /* Exibe a lista de menu apenas quando a classe 'menu-hidden' estiver presente */
     }
 
@@ -127,22 +156,24 @@ img {
 /*Header*/
 
 .frase {
-    font-weight: bold;
-    font-size: 1rem;
-    text-align: center;
+    font-size: .8rem;
+    max-width: 1050px;
+    text-align: justify;
     margin: 0 auto;
+    margin-top: 35px;
     padding: 25px 0;
+    line-height: 1.3rem;
 }
 
 .frase__dia {
-    font-size: 1.5rem;
-    color: blue;
+    font-size: .9rem;
+    color: rgb(1, 1, 32);
 }
 
 /*Noticia*/
 
 .noticia {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -150,27 +181,29 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .texto__title {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .noticia-c__texto {
-    flex: 6 1 160px;
+    flex: 2 1 250px;
     text-align: justify;
-    border-left: 1px solid black;
+    margin-top: 20px;
 }
 
 .noticia-c__img {
-    flex: 1 1 350px;
+    flex: 1 1 250px;
 }
 
 /*Colunista*/
 
 .colunista__img {
-    width: 300px;
-    height: 300px;
+    width: 230px;
+    height: 250px;
 }
 
 .colunista__descricao {
@@ -178,7 +211,7 @@ img {
 }
 
 .colunistas {
-    max-width: 1000px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -191,7 +224,7 @@ img {
 }
 
 .colunista {
-    width: 280px;
+    width: 230px;
     margin: 0 20px;
 }
 
